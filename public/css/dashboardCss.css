@@ -1,0 +1,68 @@
+/*CSS*/
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(13, 79, 82);
+    overflow-x: hidden;
+    transition: all 0.5s;
+
+    }
+
+    .sidebar ul {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    }
+    .sidebar ul li{
+        padding: 10px;
+        list-style-type: none;
+    }
+
+    ul li:hover{
+        background-color: black;
+        border-radius: 5%;
+    }
+
+    ul p{
+        font-size: 60%;
+        color: darkgray;
+        font-weight: bold;
+    }
+
+    ul li a:hover{
+        color: blue;
+        text-decoration: none;
+    }
+
+    ul li a{
+        color: darkkhaki;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px plum;
+    }
+
+
+    .sidebar .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    color:white;
+    transition: 0.3s;
+    }
+
+    #sidebtn-id h3{
+        padding-left: 20px;
+    }
+
+    #imgstyle{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    }
+
+
