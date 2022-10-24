@@ -16,20 +16,18 @@
             <div class="row">
                 <div class="table-responsive">
 
-                    <table class="table teble-bordered bg-dark rounded text-light col-md-12">
+                    <table class="table teble-bordered bg-dark rounded text-light rounded">
                         <tr>
-                            <td class="col-md-4">
+                            <td class="col-md-3">
                                 <p>{{ $professor->name }}</p>
                             </td>
-                            <td class="col-md-4">
+                            <td class="col-md-3">
                                 <a href="">
                                     <img id='imgstyle' src="{{asset('img/crew/'.$professor->photo)}}"> <br>
                                 </a>
                             </td>
-                            <td class="col-md-2">
-                                <a href="{{ url('crew edit/'.$professor->id) }}" class="btn btn-success" role="button">edit</a>
-                            </td>
-                            <td class="col-md-2">
+                            <td class="col-md-1">
+                                <a href="{{ url('crew edit/'.$professor->id) }}" class="btn btn-success mb-1" role="button">edit</a>
                                 <a href="{{ url('crew delete/'.$professor->id) }}" class="btn btn-danger" role="button">delete</a>
                             </td>
                         </tr>

@@ -1,7 +1,7 @@
 @extends('layouts.g-app')
 @section('content')
 
-<div class="container my-4">
+<div class="container my-4 popo">
     <div class="my-2">
         <div class="row">
             <img class="offset-md-5 mt-2" src="{{ asset('img/Gryffindor.jpg') }}" style="width:100px; height:100px;">

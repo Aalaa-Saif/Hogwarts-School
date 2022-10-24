@@ -8,7 +8,7 @@
     left: 0;
     background-color: rgb(13, 79, 82);
     overflow-x: hidden;
-    transition: all 0.5s;
+    transition: 0.9s;
 
     }
 
@@ -21,6 +21,7 @@
     .sidebar ul li{
         padding: 10px;
         list-style-type: none;
+        border-bottom: 1px solid rgb(74, 135, 206);
     }
 
     ul li:hover{
@@ -35,7 +36,7 @@
     }
 
     ul li a:hover{
-        color: blue;
+        color: rgb(52, 52, 158);
         text-decoration: none;
     }
 
@@ -52,16 +53,25 @@
     right: 25px;
     font-size: 36px;
     color:white;
-    transition: 0.3s;
+    transition: 0.9s;
     }
 
-    #sidebtn-id h3{
-        padding-left: 20px;
+    .admin_name {
+        color:rgb(222, 223, 223);
+        font-size: 50px;
+        font-family: '@Cooper Black';
     }
+
+    #sidebtn-id p a{
+        font-size: 40px;
+        color: rgb(209, 114, 114);
+        text-decoration: none;
+    }
+
 
     #imgstyle{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border: 1px solid black;
     }
 

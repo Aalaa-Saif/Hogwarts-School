@@ -1,7 +1,7 @@
 @extends('layouts.g-app')
 
 @section('content')
-    <body class="mainBody img-fluid">
+    <body class="mainBody">
 
         <div class="container my-5">
             <div class="col-md-10 offset-md-1 my-5">

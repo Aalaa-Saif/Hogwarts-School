@@ -142,7 +142,7 @@ class CrewController extends Controller
 
      public function dashboardOthers(){
         $user = Auth::user()->name;
-        $otherinfo = crew::select('id','name','description','photo')->where('type','other') ->get();
+        $otherinfo = crew::select('id','name','description','photo')->where('type','others') ->get();
         return view('myApp.adminDashboard.crew.others',compact('otherinfo','user'));
      }
 

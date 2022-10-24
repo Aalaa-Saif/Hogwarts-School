@@ -15,7 +15,7 @@
 
             <div class="card bg-dark text-light crudcard">
                 <div class="card-header text-center">Edit</div>
-                <div class="card-body text-dark">
+                <div class="card-body text-light">
                     <form method="POST" action="{{ url('supply update/'.$supply->id) }}" enctype="multipart/form-data">
                         @csrf
 

@@ -161,13 +161,19 @@ class DepartmentController extends Controller
 
 
 ##################################### Departments ######################################
+    //Departments Blade
+    public function departments(){
+        return view('myApp.departments.departments');
+    }
+
+    public function departments2(){
+        return view('myApp.departments.departments2');
+    }
+
+
     public function classes(){
         $classinfo = department::select('id','name','description','photo')->where('type','class') ->get();
         return view('myApp.departments.classes',compact('classinfo'));
-    }
-    public function try(){
-        $classinfo = department::select('id','photo')->where('type','class') ->get();
-        return view('myApp.supplies.try',compact('classinfo'));
     }
 
     public function backyards(){

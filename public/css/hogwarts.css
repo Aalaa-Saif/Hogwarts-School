@@ -124,16 +124,16 @@ form{
     border: none;
 }
 
-
 .mainBody{
     background-image: url("/img/Hogwarts school.jpg");
     background-repeat: no-repeat;
+    background-size:100% 100%;
 }
 
 .loginCard{
     background-image: url("/img/castle.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .main_p{
@@ -267,4 +267,6 @@ form{
     }
   }
 
-
+.llll{
+    color: red;
+}

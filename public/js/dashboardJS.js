@@ -6,6 +6,8 @@ function close_sidebar(){
 
    close_sidebar.style.width = '0';
    close_sidebtn.style.marginLeft = '0';
+   close_sidebtn.style.transition = '0.9s';
+
 
 }
 
@@ -15,4 +17,6 @@ function open_sidebar(){
 
     open_sidebar.style.width = "250px";
     open_sidebtn.style.marginLeft = "250px";
+    open_sidebtn.style.transition = '0.9s';
+
 }

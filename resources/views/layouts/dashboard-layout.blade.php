@@ -12,7 +12,7 @@
 <div class="container">
     <div id="sidebar-id" class="sidebar">
 
-        <h4 class="mt-3 ml-2 text-light">{{ $user }}</h4>
+        <p class="mt-5 admin_name text-center">{{ $user }}</p>
         <div class="sidebar-header">
             <button onclick="close_sidebar()" class="close closedash" id="closedash" type="button">
                 <span >&times</span>
@@ -111,9 +111,11 @@
 
 
 
-     <div id="sidebtn-id">
-                   <button onclick="open_sidebar()" class="btn navbar-btn navbar-toggler navbar-light bg-light opendash" type="button"> <span class="navbar-toggler-icon "></span></button>
-                   <h3 class="navbar-text text-center"><a href="{{ url('dashboard') }}" class="text-dark"><u>Admin Dashboard</u></a></h3>
+     <div id="sidebtn-id" class="row">
+            <button onclick="open_sidebar()" class="btn navbar-btn navbar-toggler navbar-light bg-light opendash col-md-1 mt-4" type="button">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <p class="col-md-10 mt-5"><a href="{{ url('dashboard') }}"><b>Admin Dashboard</b></a></p>
 
          @yield('content')
 

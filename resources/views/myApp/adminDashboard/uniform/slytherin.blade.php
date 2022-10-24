@@ -14,22 +14,20 @@
         <span><a href="{{ url('uniform create') }}" class="btn btn-primary" role="button">Create a new Uniform</a></span>
         @foreach($scinfo as $sc)
             <div class="row">
-                <div class="table-responsive">
+                <div class="table-responsive col-md-11">
 
-                    <table class="table teble-bordered bg-dark text-light col-md-12">
+                    <table class="table teble-bordered bg-dark text-light rounded">
                         <th>{{ $sc->type }}</th>
                         <tr>
-                            <td class="col-md-4">
+                            <td class="col-md-3">
                                 <a href="">
                                     @foreach($sc->images as $img)
                                     <img id='imgstyle' src="{{asset('img/uniforms/'.$img->photo)}}"> <br>
                                     @endforeach
                                 </a>
                             </td>
-                            <td class="col-md-2">
+                            <td class="col-md-1">
                                 <a href="{{ url('uniform edit/'.$sc->id) }}" class="btn btn-success">edit</a>
-                            </td>
-                            <td class="col-md-2">
                                 <a href="{{ url('uniform delete/'.$sc->id) }}" class="btn btn-danger">delete</a>
                             </td>
                         </tr>
@@ -41,22 +39,20 @@
 
         @foreach($sqinfo as $sq)
         <div class="row">
-            <div class="table-responsive">
+            <div class="table-responsive col-md-11">
 
-                <table class="table teble-bordered bg-dark text-light col-md-12">
+                <table class="table teble-bordered bg-dark text-light rounded">
                     <th>{{ $sq->type }}</th>
                     <tr>
-                        <td class="col-md-4">
+                        <td class="col-md-3">
                             <a href="">
                                 @foreach($sq->images as $img)
                                 <img id='imgstyle' src="{{asset('img/uniforms/'.$img->photo)}}"> <br>
                                 @endforeach
                             </a>
                         </td>
-                        <td class="col-md-2">
+                        <td class="col-md-1">
                             <a href="{{ url('uniform edit/'.$sq->id) }}" class="btn btn-success">edit</a>
-                        </td>
-                        <td class="col-md-2">
                             <a href="{{ url('uniform delete/'.$sq->id) }}" class="btn btn-danger">delete</a>
                         </td>
                     </tr>

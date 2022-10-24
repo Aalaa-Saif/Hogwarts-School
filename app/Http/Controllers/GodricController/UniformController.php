@@ -35,12 +35,6 @@ class UniformController extends Controller
         $user = Auth::user()->name;
         return view('myApp.adminDashboard.uniform.create',compact('user'));
     }
-
-    public function try(){
-
-        return view('myApp.uniforms.try');
-    }
-
 ##################################### CRUD ######################################
     public function store(infoImgMulti $request){
         //validator

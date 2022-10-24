@@ -14,22 +14,20 @@
         <span><a href="{{ url('uniform create') }}" class="btn btn-primary" role="button">Create a new Uniform</a></span>
         @foreach($gcinfo as $gc)
             <div class="row">
-                <div class="table-responsive">
+                <div class="table-responsive col-md-11">
 
-                    <table class="table teble-bordered bg-dark text-light col-md-12">
+                    <table class="table teble-bordered bg-dark text-light rounded">
                         <th>{{ $gc->type }}</th>
                         <tr>
-                            <td class="col-md-4">
+                            <td class="col-md-2">
                                 <a href="">
                                     @foreach($gc->images as $img)
                                     <img id='imgstyle' src="{{asset('img/uniforms/'.$img->photo)}}"> <br>
                                     @endforeach
                                 </a>
                             </td>
-                            <td class="col-md-2">
+                            <td class="col-md-1">
                                 <a href="{{ url('uniform edit/'.$gc->id) }}" class="btn btn-success">edit</a>
-                            </td>
-                            <td class="col-md-2">
                                 <a href="{{ url('uniform delete/'.$gc->id) }}" class="btn btn-danger">delete</a>
                             </td>
                         </tr>
@@ -41,22 +39,20 @@
 
         @foreach($gqinfo as $gq)
         <div class="row">
-            <div class="table-responsive">
+            <div class="table-responsive col-md-11">
 
-                <table class="table teble-bordered bg-dark text-light col-md-12">
+                <table class="table teble-bordered bg-dark text-light rounded">
                     <th>{{ $gq->type }}</th>
                     <tr>
-                        <td class="col-md-4">
+                        <td class="col-md-3">
                             <a href="">
                                 @foreach($gq->images as $img)
                                 <img id='imgstyle' src="{{asset('img/uniforms/'.$img->photo)}}"> <br>
                                 @endforeach
                             </a>
                         </td>
-                        <td class="col-md-2">
+                        <td class="col-md-1">
                             <a href="{{ url('uniform edit/'.$gq->id) }}" class="btn btn-success">edit</a>
-                        </td>
-                        <td class="col-md-2">
                             <a href="{{ url('uniform delete/'.$gq->id) }}" class="btn btn-danger">delete</a>
                         </td>
                     </tr>

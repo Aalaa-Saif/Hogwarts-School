@@ -1,5 +1,6 @@
+
 <nav class="navbar navbar-expand-md" role="navigation">
-    <a class="navbar-brand img-responsive" href="Main">
+    <a class="navbar-brand img-responsive" href="{{ url('Main') }}" >
         <img src="{{ asset('img/logo.png') }}">
     </a>
     <button class="navbar-toggler navbar-dark bg-dark collapsedark" type="button" data-toggle="collapse" data-target="#navbarid" aria-expanded="false">

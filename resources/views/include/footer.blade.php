@@ -11,12 +11,13 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4 offset-md-8 mb-3">
-            <img class="img-fluid rounded-circle" src="img/gmail.jpg" href="#" style="width:30px; height:30px;">
-            <span> lula.chun4@gmail.com </span>
+        <div class="col-md-4 offset-md-8 mb-1">
+           <img class="img-fluid rounded-circle" src="img/gmail.jpg" href="#" style="width:30px; height:30px;">
+           aalaa.saif.004@gmail.com
         </div>
-
-
+         <div class="col-md-2 offset-md-8 mb-3">
+            &#169; 2022
+        </div>
 
     </div>
 

@@ -5,9 +5,9 @@
 
         <div class="row">
             <div class="col-md-10">
-                <div class="card bg-dark text-light offset-md-2 mt-2 pt-2">
+                <div class="card bg-dark text-light offset-md-2 mt-2 pt-2 border border-light">
                     <div class="card-header cardjs" aria-expanded="false" aria-controls="coll" data-target="#coll">
-                        <p>Quidditch Sport</p>
+                       <b><p>Quidditch Sport</p></b>
                     </div>
 
                     <div class="card-body cardjs2" style="display: none" id="coll">

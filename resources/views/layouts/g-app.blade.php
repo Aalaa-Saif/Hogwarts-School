@@ -11,7 +11,6 @@
 
 <body>
 
-
     <div id="divbody">
         @include('include.header')
         @yield('content')

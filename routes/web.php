@@ -36,16 +36,12 @@ Route::view('home','home');
 Route::group(['namespace' => 'GodricController'], function() {
 
 ############################## Blade Controller ##################################
-    Route::get('Main',[BladeController::class,'MainPage']);
-    Route::get('department',[BladeController::class,'departments']);
-    Route::get('department2',[BladeController::class,'departments2']);
-    Route::get('header',[BladeController::class,'bladeHeader']);
-    Route::get('footer',[BladeController::class,'bladeFooter']);
-    Route::get('admin login',[LoginController::class,'bladelogin'])->name('login');
-
+    Route::get('Main',[BladeController::class,'MainPage'])->name('Main');
 
 
 ############################## Department Controller ##################################
+    Route::get('department',[DepartmentController::class,'departments'])->name('department');
+    Route::get('department2',[DepartmentController::class,'departments2']);
     Route::get('classes',[DepartmentController::class,'classes']);
     Route::get('backyards',[DepartmentController::class,'backyards']);
     Route::get('inside school',[DepartmentController::class,'inside']);
@@ -55,19 +51,11 @@ Route::group(['namespace' => 'GodricController'], function() {
 
 
 
-############################## Auth Controller ######################################
-    // Login Controller
-    Route::post('log',[LoginController::class,'admin_login'])->name('log');
 
-     // Register Controller
-    //Route::get('admin register',[RegisterController::class,'register']);
-    //Route::post('admin store',[RegisterController::class,'store'])->name('admin_register'); // Register a new Admin
 
 
     ######################## Middleware #########################
     Route::group(['middleware'=>'auth'],function(){
-        Route::get('dashboard',[LoginController::class,'bladeDashboard']);
-        Route::get('admin logout',[LogoutController::class,'logout'])->name('logout');
 
         Route::get('department create',[DepartmentController::class,'departmentCreate']);
         Route::get('dashboard class',[DepartmentController::class,'dashboardClass']);
@@ -127,5 +115,25 @@ Route::group(['namespace' => 'GodricController'], function() {
     Route::get('students',[CrewController::class,'students']);
     Route::get('others',[CrewController::class,'others']);
 
+});
+
+
+Route::group(['namespace' => 'AuthController'], function() {
+
+############################## Auth Controller ######################################
+
+    // Login Controller
+    Route::get('admin login',[LoginController::class,'bladelogin'])->name('login');
+    Route::post('log',[LoginController::class,'admin_login'])->name('log');
+
+     // Register Controller
+    //Route::get('admin register',[RegisterController::class,'register']);
+    //Route::post('admin store',[RegisterController::class,'store'])->name('admin_register'); // Register a new Admin
+
+    Route::group(['middleware'=>'auth'],function(){
+
+        Route::get('dashboard',[LoginController::class,'bladeDashboard']);
+        Route::get('admin logout',[LogoutController::class,'logout'])->name('logout');
+    });
 
 });

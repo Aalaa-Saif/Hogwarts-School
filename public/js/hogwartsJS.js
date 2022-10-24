@@ -1,8 +1,10 @@
+
+
 $(document).ready(function() {
 
     $('.cardjs').click(function(){ //This for quidditch page In sypplies Folder
         $('.cardjs2').toggle('slow');
-    })
+    });
 
 
 
@@ -12,7 +14,7 @@ $(document).ready(function() {
       //if you want to hide previously opened comment when a new one is clicked
       $par.not($comm).slideUp('slow');
       e.preventDefault();
-    })
+    });
 
 
 
@@ -31,6 +33,7 @@ $(document).ready(function() {
         var id = $(this).data('id');
         $('.modal').css("display","none");
     });
+
 
  });
 

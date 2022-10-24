@@ -61,10 +61,10 @@
                         <div class="form-group row">
                             <label for="photo" class="col-md-4 col-form-label text-md-right">Photo</label>
                             @foreach($uniform->images as $uni)
-                            <div class="col-md-2">
+                            <div class="col-md-2 mx-1">
 
                                 <div class="card-body">
-                                    <img class="card-img-top" style="width:100px; height:100px" src="{{asset('img/uniforms/'.$uni->photo)}}">
+                                    <img class="card-img-top mb-1" style="width:80px; height:80px" src="{{asset('img/uniforms/'.$uni->photo)}}">
 
                                     <a class="btn btn-danger text-light" href="{{ url('delete image/'.$uni->id) }}">Delete</a>
                                 </div>
