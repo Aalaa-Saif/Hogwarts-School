@@ -223,6 +223,11 @@ form{
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+  }
+
+  .modal img{
+    z-index: -1;
   }
 
   /* Modal Content (Image) */
@@ -244,19 +249,17 @@ form{
   /* The Close Button */
   .close_span {
     position: absolute;
-    top: 50px;
-    right: 80px;
+    top: 20px;
+    right:200px;
     transition: 0.3s;
-  }
-
-  .close_span {
-    color: snow;
+    color: red;
     font-size: 50px;
   }
 
+
   .close_span:hover,
   .close_span:focus {
-    color:red;
+    color:rgb(255, 73, 73);
     cursor: pointer;
   }
 
@@ -265,8 +268,23 @@ form{
     .modal-content {
       width: 100%;
     }
+
+    .close_span {
+        position: absolute;
+        top: 20px;
+        right:0px;
+        transition: 0.3s;
+        color: red;
+        font-size: 50px;
+      }
   }
 
 .llll{
     color: red;
+}
+
+@media only screen and (max-width: 700px){
+.middle_uniform{
+    margin-left: 190px;
+}
 }

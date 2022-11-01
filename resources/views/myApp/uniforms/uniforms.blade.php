@@ -1,10 +1,10 @@
 @extends('layouts.g-app')
 @section('content')
 
-<div class="container my-4 popo">
+<div class="container my-4">
     <div class="my-2">
         <div class="row">
-            <img class="offset-md-5 mt-2" src="{{ asset('img/Gryffindor.jpg') }}" style="width:100px; height:100px;">
+            <img class="offset-md-5 mt-2 middle_uniform" src="{{ asset('img/Gryffindor.jpg') }}" style="width:100px; height:100px;">
         </div>
 
         <div class="row">
@@ -84,7 +84,7 @@
 
         <!-- -->
         <div class="row mt-5">
-            <img class="offset-md-5 mt-5" src="{{ asset('img/Slytherin.jpg') }}" style="width:100px; height:100px;">
+            <img class="offset-md-5 mt-5 middle_uniform" src="{{ asset('img/Slytherin.jpg') }}" style="width:100px; height:100px;">
         </div>
         <div class="row">
             @foreach($scinfo as $sc)
@@ -164,7 +164,7 @@
 
         <!-- -->
         <div class="row mt-5">
-            <img class="offset-md-5 mt-5" src="{{ asset('img/Hufflepuff.jpg') }}" style="width:100px; height:100px;">
+            <img class="offset-md-5 mt-5 middle_uniform" src="{{ asset('img/Hufflepuff.jpg') }}" style="width:100px; height:100px;">
         </div>
         <div class="row">
             @foreach($hcinfo as $hc)
@@ -243,7 +243,7 @@
 
         <!-- -->
         <div class="row mt-5">
-            <img class="offset-md-5 mt-5" src="{{ asset('img/Ravenclaw.jpg') }}" style="width:100px; height:100px;">
+            <img class="offset-md-5 mt-5 middle_uniform" src="{{ asset('img/Ravenclaw.jpg') }}" style="width:100px; height:100px;">
         </div>
         <div class="row">
             @foreach($rcinfo as $rc)
