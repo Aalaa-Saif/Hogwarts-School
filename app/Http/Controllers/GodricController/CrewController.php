@@ -40,7 +40,6 @@ class CrewController extends Controller
 
         //Call Photo from Traits folder
         $file_name = $this->savephoto($request->photo,'img/crew');
-
         // Save photo in folder
 
         //insert

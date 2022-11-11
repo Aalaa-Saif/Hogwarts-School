@@ -1,6 +1,7 @@
 
 
-
+<br>
+<br>
 <footer id="footer">
 
 <div class="container-fluid border-top rounded">
@@ -15,7 +16,7 @@
            <img class="img-fluid rounded-circle" src="img/gmail.jpg" href="#" style="width:30px; height:30px;">
            aalaa.saif.004@gmail.com
         </div>
-         <div class="col-md-2 offset-md-8 mb-3">
+         <div class="col-md-2 offset-md-8 mb-5">
             &#169; 2022
         </div>
 
