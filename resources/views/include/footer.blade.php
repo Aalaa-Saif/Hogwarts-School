@@ -14,7 +14,7 @@
     <div class="row">
         <div class="col-md-4 offset-md-8 mb-1">
            <img class="img-fluid rounded-circle" src="img/gmail.jpg" href="#" style="width:30px; height:30px;">
-           aalaa.saif.004@gmail.com
+           aalaa.saif96@gmail.com
         </div>
          <div class="col-md-2 offset-md-8 mb-5">
             &#169; 2022

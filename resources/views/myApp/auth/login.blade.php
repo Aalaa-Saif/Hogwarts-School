@@ -1,9 +1,8 @@
 @extends('layouts.g-app')
 
 @section('content')
-    <div class="container">
-        <div class="col-md-8 offset-md-2">
-
+    <div class="container mt-5">
+        <div class="col-md-8 offset-md-2 mt-5">
 
             <div class="card border-0 bg-dark crudcard">
                 <div class="card-header text-light text-center"> Admin Login</div>
@@ -51,6 +50,6 @@
             </div>
         </div>
     </div>
-    <div class="my-5"></div>
+    <br>
 
 @endsection
