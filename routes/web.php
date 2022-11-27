@@ -131,8 +131,8 @@ Route::group(['namespace' => 'AuthController'], function() {
     //Route::post('admin store',[RegisterController::class,'store'])->name('admin_register'); // Register a new Admin
 
     Route::group(['middleware'=>'auth'],function(){
-
-        Route::get('dashboard',[LoginController::class,'bladeDashboard']);
+        Route::get('dashboard',[LoginController::class,'bladeDashboard'])->name('dashboard');
+        Route::post('admin name/{id}',[LoginController::class,'updateAdminName']);
         Route::get('admin logout',[LogoutController::class,'logout'])->name('logout');
     });
 

@@ -227,9 +227,9 @@ form{
 
   }
 
-  .modal img{
+.modal img{
     z-index: -1;
-  }
+}
 
   /* Modal Content (Image) */
   .modal-content {
@@ -257,7 +257,6 @@ form{
     font-size: 50px;
   }
 
-
   .close_span:hover,
   .close_span:focus {
     color:rgb(255, 73, 73);
@@ -279,13 +278,3 @@ form{
         font-size: 50px;
       }
   }
-
-.llll{
-    color: red;
-}
-
-@media only screen and (max-width: 700px){
-.middle_uniform{
-    margin-left: 190px;
-}
-}

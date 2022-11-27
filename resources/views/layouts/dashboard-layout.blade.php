@@ -9,15 +9,47 @@
 
 <body>
 
+    <div id="name_space" class="name_space">
+        <form method="POST" action="{{ url('admin name/'.$user->id) }}">
+            @csrf
+
+            <div class="form-group row my-4">
+                <label for="name" class="col-md-2 col-form-label text-md-right">Name</label>
+
+                <div class="col-md-6">
+                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ $user->name }}" required autocomplete="name" autofocus>
+
+                    @error('name')
+                        <small class="small-text" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </small>
+                    @enderror
+                </div>
+            </div>
+
+            <div class="form-group row mb-0 my-4">
+                <div class="col-md-6 offset-md-4">
+                    <button type="submit"class='btn btn-primary'>
+                        Update
+                    </button>
+
+                    <a class="btn btn-danger text-light" onclick="name_space_close()">Close</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
 <div class="container">
     <div id="sidebar-id" class="sidebar">
 
-        <p class="mt-5 admin_name text-center">{{ $user }}</p>
+        <p class="mt-5 admin_name text-center">{{ $user->name }}</p>
+        <img src="{{ asset('img/edit.png') }}" href="" style="width:16px; height:16px;" onclick="name_space()">
         <div class="sidebar-header">
             <button onclick="close_sidebar()" class="close closedash" id="closedash" type="button">
                 <span >&times</span>
             </button>
         </div>
+
 
         <hr class="bg-dark">
         <div class="sidebar-body">
@@ -118,6 +150,7 @@
             <p class="col-md-10 mt-5"><a href="{{ url('dashboard') }}"><b>Admin Dashboard</b></a></p>
 
          @yield('content')
+
 
      </div>
 

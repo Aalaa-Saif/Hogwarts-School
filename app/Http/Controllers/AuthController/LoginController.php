@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\AuthController;
 
 use view;
+use File;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Requests\loginRequest;
@@ -27,12 +28,24 @@ class LoginController extends Controller
 
 
     public function bladeDashboard(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         return view('layouts.dashboard-layout',['user'=> $user]);
     }
 
     public function bladelogin(){
         return view('myApp.auth.login');
+    }
+
+    public function updateAdminName(Request $request, $id){
+        $update = Auth::user()->find($id);
+        if(!$update)
+        return redirect()->back()->with(['name_fail'=>'name didn\'t update']);
+
+        //update
+        $update->name = $request->name;
+        $update->update();
+
+        return redirect()->route('dashboard');
     }
 
 }

@@ -65,8 +65,7 @@ class CrewController extends Controller
 
     }
 
-    public function update(infoRequest $request, $crew_id){
-
+    public function update(Request $request, $crew_id){
         //validation
 
         //check if the id exist or not

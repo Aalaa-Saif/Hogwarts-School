@@ -9,70 +9,99 @@
     background-color: rgb(13, 79, 82);
     overflow-x: hidden;
     transition: 0.9s;
-
     }
 
-    .sidebar ul {
+.sidebar ul {
     font-size: 24px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
-    }
-    .sidebar ul li{
-        padding: 10px;
-        list-style-type: none;
-        border-bottom: 1px solid rgb(74, 135, 206);
-    }
+}
+.sidebar ul li{
+    padding: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid rgb(74, 135, 206);
+}
 
-    ul li:hover{
-        background-color: black;
-        border-radius: 5%;
-    }
+ul li:hover{
+    background-color: black;
+    border-radius: 5%;
+}
 
-    ul p{
-        font-size: 60%;
-        color: darkgray;
-        font-weight: bold;
-    }
+ul p{
+    font-size: 60%;
+    color: darkgray;
+    font-weight: bold;
+}
 
-    ul li a:hover{
-        color: rgb(52, 52, 158);
-        text-decoration: none;
-    }
+ul li a:hover{
+    color: rgb(52, 52, 158);
+    text-decoration: none;
+}
 
-    ul li a{
-        color: darkkhaki;
-        text-decoration: none;
-        text-shadow: 1px 1px 1px plum;
-    }
+ul li a{
+    color: darkkhaki;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px plum;
+}
 
 
-    .sidebar .close {
+.sidebar .close {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     color:white;
     transition: 0.9s;
+}
+
+.admin_name {
+    color:rgb(222, 223, 223);
+    font-size: 50px;
+    font-family: '@Cooper Black';
+}
+
+#sidebtn-id{
+    z-index: -1;
+}
+
+#sidebtn-id p a{
+    font-size: 40px;
+    color: rgb(209, 114, 114);
+    text-decoration: none;
+}
+
+
+#imgstyle{
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+}
+
+#sidebar-id img{
+    margin-left:205px;
+    margin-top: -202px;
+    cursor: pointer;
+}
+
+.name_space{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 250px;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(238, 237, 237); /* Black w/ opacity */
+    transition: 0.5s;
+}
+
+
+@media only screen and (max-width: 700px){
+    #sidebtn-id p{
+        margin-left: 60px;
     }
 
-    .admin_name {
-        color:rgb(222, 223, 223);
-        font-size: 50px;
-        font-family: '@Cooper Black';
-    }
-
-    #sidebtn-id p a{
-        font-size: 40px;
-        color: rgb(209, 114, 114);
-        text-decoration: none;
-    }
-
-
-    #imgstyle{
-        width: 120px;
-        height: 120px;
-        border: 1px solid black;
-    }
-
-
+}
