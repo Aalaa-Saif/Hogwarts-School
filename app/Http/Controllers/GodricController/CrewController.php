@@ -30,7 +30,7 @@ class CrewController extends Controller
 
     //Admin Dashboard Blade
     public function crewCreate(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         return view('myApp.adminDashboard.crew.create',compact('user'));
     }
 
@@ -53,7 +53,7 @@ class CrewController extends Controller
     }
 
     public function edit($crew_id){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         //check if the id exist or not
         $crew = crew::find($crew_id);
         if(!$crew)
@@ -121,25 +121,25 @@ class CrewController extends Controller
 
 ##################################### Dashboard Crew ######################################
     public function dashboardHeadmaster(){
-       $user = Auth::user()->name;
+       $user = Auth::user();
        $headmasterinfo = crew::select('id','name','description','photo')->where('type','headmaster') ->get();
        return view('myApp.adminDashboard.crew.headmaster',compact('headmasterinfo','user'));
     }
 
     public function dashboardProfessor(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $professorinfo = crew::select('id','name','description','photo')->where('type','professor') ->get();
         return view('myApp.adminDashboard.crew.professors',compact('professorinfo','user'));
      }
 
      public function dashboardStudent(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $studentinfo = crew::select('id','name','description','photo')->where('type','student') ->get();
         return view('myApp.adminDashboard.crew.students',compact('studentinfo','user'));
      }
 
      public function dashboardOthers(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $otherinfo = crew::select('id','name','description','photo')->where('type','others') ->get();
         return view('myApp.adminDashboard.crew.others',compact('otherinfo','user'));
      }

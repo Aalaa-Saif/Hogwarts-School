@@ -32,7 +32,7 @@ class SupplyController extends Controller
 
     //Admin Dashboard Blade
     public function create(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         return view('myApp.adminDashboard.supply.create',compact('user'));
     }
 
@@ -57,7 +57,7 @@ class SupplyController extends Controller
     }
 
     public function edit($supply_id){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         //check if the id exist or not
         $supply = supply::find($supply_id);
         if(!$supply)
@@ -126,13 +126,13 @@ class SupplyController extends Controller
 
 ##################################### Dashboard Crew ######################################
     public function dashboardClasses(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $classinfo = supply::select('id','name','description','photo')->where('type','class') ->get();
         return view('myApp.adminDashboard.supply.classes',compact('classinfo','user'));
     }
 
     public function dashboardQuidditch(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $quidditchinfo = supply::select('id','name','description','photo')->where('type','quidditch') ->get();
         return view('myApp.adminDashboard.supply.quidditch',compact('quidditchinfo','user'));
     }

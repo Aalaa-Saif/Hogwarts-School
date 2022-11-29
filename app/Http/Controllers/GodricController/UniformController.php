@@ -32,7 +32,7 @@ class UniformController extends Controller
 
     //Admin Dashboard Blade
     public function create(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         return view('myApp.adminDashboard.uniform.create',compact('user'));
     }
 ##################################### CRUD ######################################
@@ -65,7 +65,7 @@ class UniformController extends Controller
     }
 
     public function edit($uniform_id){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         //check if the id exist or not
         $uniform = uniform::find($uniform_id);
         if(!$uniform)
@@ -151,28 +151,28 @@ class UniformController extends Controller
 
 ##################################### Dashboard Crew ######################################
     public function dashboardGryffindor(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $gcinfo = uniform::all()->where('type','Gryffindor Class');
         $gqinfo = uniform::all()->where('type','Gryffindor Quidditch');
 
     return view('myApp.adminDashboard.uniform.gryffindor',compact('gcinfo','gqinfo','user'));
     }
     public function dashboardSlytherin(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $scinfo = uniform::all()->where('type','Slytherin Class');
         $sqinfo = uniform::all()->where('type','Slytherin Quidditch');
 
         return view('myApp.adminDashboard.uniform.slytherin',compact('scinfo','sqinfo','user'));
     }
     public function dashboardHufflepuff(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $hcinfo = uniform::all()->where('type','Hufflepuff Class');
         $hqinfo = uniform::all()->where('type','Hufflepuff Quidditch');
 
         return view('myApp.adminDashboard.uniform.hufflepuff',compact('hcinfo','hqinfo','user'));
     }
     public function dashboardRavenclaw(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $rcinfo = uniform::all()->where('type','Ravenclaw Class');
         $rqinfo = uniform::all()->where('type','Ravenclaw Quidditch');
 

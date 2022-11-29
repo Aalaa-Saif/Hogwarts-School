@@ -30,7 +30,7 @@ class DepartmentController extends Controller
 
      //Admin Dashboard Blade
      public function departmentCreate(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         return view('myApp.adminDashboard.department.create',compact('user'));
     }
 
@@ -54,7 +54,7 @@ class DepartmentController extends Controller
     }
 
     public function edit($show_id){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         //check if the id exist or not
         $show = department::find($show_id);
         if(!$show)
@@ -123,31 +123,31 @@ class DepartmentController extends Controller
 
 ##################################### Dashboard Departments ######################################
     public function dashboardClass(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
        $classinfo = department::select('id','name','description','photo')->where('type','class') ->get();
        return view('myApp.adminDashboard.department.classes',compact('classinfo','user'));
     }
 
     public function dashboardBackyard(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $backyardinfo = department::select('id','name','description','photo')->where('type','backyard') ->get();
         return view('myApp.adminDashboard.department.backyards',compact('backyardinfo','user'));
      }
 
      public function dashboardInside(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $insideinfo = department::select('id','name','description','photo')->where('type','inside school') ->get();
         return view('myApp.adminDashboard.department.inside',compact('insideinfo','user'));
      }
 
      public function dashboardOutside(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $outsideinfo = department::select('id','name','description','photo')->where('type','outside school') ->get();
         return view('myApp.adminDashboard.department.outside',compact('outsideinfo','user'));
      }
 
      public function dashboardRelative(){
-        $user = Auth::user()->name;
+        $user = Auth::user();
         $relativeinfo = department::select('id','name','description','photo')->where('type','relative with school') ->get();
         return view('myApp.adminDashboard.department.relative',compact('relativeinfo','user'));
      }
