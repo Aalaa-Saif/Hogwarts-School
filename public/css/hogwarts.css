@@ -1,7 +1,5 @@
 /*CSS*/
 
-
-
 body{
     background-image: radial-gradient(rgb(209, 207, 196), rgb(128, 125, 93),rgb(228, 192, 158));
     background-repeat: no-repeat;
@@ -12,7 +10,6 @@ body{
 #divbody{
     padding-bottom: 2.5rem;
 }
-
 
 .btnshow{
     text-decoration: none;
@@ -142,13 +139,17 @@ form{
     text-shadow: 1px 1px 1px black, 4px 4px 4px gray;
 }
 .main_card{
-    font-size: 24px;
-    font-family:'@Cooper Black';
+    font-size: 32px;
+    font-family:'@Forte';
     color: black;
     text-shadow: 1px 1px 1px tan, 4px 4px 4px purple;
-
-
 }
+.main_complement{
+    font-size: 34px;
+    font-family:'@Forte';
+    text-shadow: 1px 1px 1px black;
+}
+
 .crew-card{
     background-color: black;
 }
@@ -201,6 +202,17 @@ form{
 }
 .uniblue{
     text-shadow: 2px 2px 2px black, 5px 5px 5px darkblue;
+}
+#carousel-indicators-color{
+    background-color: black;
+}
+
+#carousel-indicators-color.active{
+    background-color: rgb(102, 190, 43);
+}
+#carousel_color{
+    background-color: rgb(3, 3, 3);
+    border-radius: 4px;
 }
 
 /* Style the Image Used to Trigger the Modal */

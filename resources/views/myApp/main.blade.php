@@ -5,7 +5,7 @@
 
         <div class="container my-5">
             <div class="col-md-10 offset-md-1 my-5">
-                <div class="card bg-dark text-light mainDiv">
+                <div class="text-light mainDiv">
                     <p class="card-header main_p text-center"> Welcome to Hogwarts School of Witch Craft & Wizedry </p>
                     <div class="card-body main_card">
                         It is a school for young witches and wizards, located several
@@ -18,11 +18,9 @@
                     </div>
                 </div>
             </div>
-
-            <br>
-
         </div>
-
     </body>
+
+    <br><br>
 @endsection
 

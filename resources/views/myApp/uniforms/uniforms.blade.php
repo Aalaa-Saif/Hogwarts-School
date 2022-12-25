@@ -27,7 +27,7 @@
                 <div id="g_c" class="carousel slide mt-5 col-md-10" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($gc->images as $img)
-                        <li data-target="#g_c" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}"></li>
+                        <li data-target="#g_c" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}" id="carousel-indicators-color"></li>
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
@@ -40,11 +40,11 @@
 
                     </div>
                     <a class="carousel-control-prev" href="#g_c" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#g_c" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -57,7 +57,7 @@
                 <div id="g_q" class="carousel slide mt-5 col-md-10" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($gq->images as $img)
-                        <li data-target="#g_q" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}"></li>
+                        <li data-target="#g_q" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}" id="carousel-indicators-color"></li>
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
@@ -69,11 +69,11 @@
                     </div>
 
                     <a class="carousel-control-prev" href="#g_q" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#g_q" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -107,7 +107,7 @@
                 <div id="s_c" class="carousel slide mt-5 col-md-10" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($sc->images as $img)
-                        <li data-target="#s_c" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}"></li>
+                        <li data-target="#s_c" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}" id="carousel-indicators-color"></li>
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
@@ -120,11 +120,11 @@
 
                     </div>
                     <a class="carousel-control-prev" href="#s_c" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#s_c" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -137,7 +137,7 @@
                 <div id="s_q" class="carousel slide mt-5 col-md-10" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($sq->images as $img)
-                        <li data-target="#s_q" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}"></li>
+                        <li data-target="#s_q" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}" id="carousel-indicators-color"></li>
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
@@ -150,11 +150,11 @@
 
                     </div>
                     <a class="carousel-control-prev" href="#s_q" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#s_q" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -186,7 +186,7 @@
                 <div id="h_c" class="carousel slide mt-5 col-md-10" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($hc->images as $img)
-                        <li data-target="#h_c" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}"></li>
+                        <li data-target="#h_c" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}" id="carousel-indicators-color"></li>
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
@@ -199,11 +199,11 @@
 
                     </div>
                     <a class="carousel-control-prev" href="#h_c" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#h_c" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -216,7 +216,7 @@
                 <div id="h_q" class="carousel slide mt-5 col-md-10" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($hq->images as $img)
-                        <li data-target="#h_q" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}"></li>
+                        <li data-target="#h_q" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}" id="carousel-indicators-color"></li>
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
@@ -229,11 +229,11 @@
 
                     </div>
                     <a class="carousel-control-prev" href="#h_q" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#h_q" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -265,7 +265,7 @@
                 <div id="r_c" class="carousel slide mt-5 col-md-10" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($rc->images as $img)
-                        <li data-target="#r_c" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}"></li>
+                        <li data-target="#r_c" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}" id="carousel-indicators-color"></li>
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
@@ -278,11 +278,11 @@
 
                     </div>
                     <a class="carousel-control-prev" href="#r_c" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#r_c" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -295,7 +295,7 @@
                 <div id="r_q" class="carousel slide mt-5 col-md-10" data-ride="carousel">
                     <ol class="carousel-indicators">
                         @foreach($rq->images as $img)
-                        <li data-target="#r_q" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}"></li>
+                        <li data-target="#r_q" data-slide-to=" {{$loop->index}} " class="{{$loop->first ? 'active' : '' }}" id="carousel-indicators-color"></li>
                         @endforeach
                     </ol>
                     <div class="carousel-inner">
@@ -308,11 +308,11 @@
 
                     </div>
                     <a class="carousel-control-prev" href="#r_q" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#r_q" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" id="carousel_color"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
